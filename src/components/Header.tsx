@@ -47,7 +47,9 @@ export default function Header() {
     return (
         <>
             <nav style={navigationStyle}>
-                <Link to="/" className="">Catan Logger</Link>
+                <Link to="/" className="">
+                    Catan Logger
+                </Link>
                 <button
                     style={navMenuButtonStyle} 
                     onClick={onClick}
