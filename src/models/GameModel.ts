@@ -1,4 +1,10 @@
+import { PlayerModel } from "./PlayerModel";
+import { DiceRollModel } from "./DiceRollModel";
+
 export interface GameModel {
   gameId: number;
-  gamePlayedDate: Date;
+  date: Date;
+  players: PlayerModel[];
+  totalDiceRolls: number;
+  diceRolls: DiceRollModel[];
 }

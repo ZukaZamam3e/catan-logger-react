@@ -3,13 +3,13 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faS, faPlus, faBars } from '@fortawesome/free-solid-svg-icons';
+import { faS, faPlus, faBars, faPencil, faTrash } from '@fortawesome/free-solid-svg-icons';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import {Routes,Route} from "react-router-dom"
 import Login from './components/Login';
 import HomePage from './components/HomePage';
 
-library.add(faS, faPlus, faBars);
+library.add(faS, faPlus, faBars, faPencil, faTrash);
 
 function App() {
   return (
