@@ -17,31 +17,31 @@ export default function GamesList() {
             turnOrder: 1,
             winner: true
         },{
-            playerId: 0,
+            playerId: 1,
             color: "red",
             name: "chaosdeathblade",
             turnOrder: 2,
             winner: false
         },{
-            playerId: 0,
+            playerId: 2,
             color: "green",
             name: "srotu",
             turnOrder: 3,
             winner: false
         },{
-            playerId: 0,
+            playerId: 3,
             color: "white",
             name: "falconpunchjr",
             turnOrder: 4,
             winner: false
         },{
-            playerId: 0,
+            playerId: 4,
             color: "purple",
             name: "djwheezy",
             turnOrder: 5,
             winner: false
         },{
-            playerId: 0,
+            playerId: 5,
             color: "orange",
             name: "weage123",
             turnOrder: 6,
@@ -94,40 +94,40 @@ export default function GamesList() {
             diceRolls: 0
         }]
     },{
-        gameId: 0,
+        gameId: 1,
         date: weekLater,
         players: [{
-            playerId: 0,
+            playerId: 6,
             color: "blue",
             name: "zukazamam3e",
             turnOrder: 1,
             winner: false
         },{
-            playerId: 1,
+            playerId: 7,
             color: "red",
             name: "chaosdeathblade",
             turnOrder: 2,
             winner: false
         },{
-            playerId: 2,
+            playerId: 8,
             color: "green",
             name: "srotu",
             turnOrder: 3,
             winner: false
         },{
-            playerId: 3,
+            playerId: 9,
             color: "white",
             name: "falconpunchjr",
             turnOrder: 4,
             winner: false
         },{
-            playerId: 4,
+            playerId: 10,
             color: "purple",
             name: "djwheezy",
             turnOrder: 5,
             winner: true
         },{
-            playerId: 5,
+            playerId: 11,
             color: "orange",
             name: "weage123",
             turnOrder: 6,
@@ -135,47 +135,47 @@ export default function GamesList() {
         }],
         totalDiceRolls: 42,
         diceRolls: [{
-            diceRollId: 1,
+            diceRollId: 12,
             diceNumber: 2,
             diceRolls: 1
         },{
-            diceRollId: 2,
+            diceRollId: 13,
             diceNumber: 3,
             diceRolls: 2
         },{
-            diceRollId: 3,
+            diceRollId: 14,
             diceNumber: 4,
             diceRolls: 5
         },{
-            diceRollId: 4,
+            diceRollId: 15,
             diceNumber: 5,
             diceRolls: 7
         },{
-            diceRollId: 5,
+            diceRollId: 16,
             diceNumber: 6,
             diceRolls: 6
         },{
-            diceRollId: 6,
+            diceRollId: 17,
             diceNumber: 7,
             diceRolls: 3
         },{
-            diceRollId: 7,
+            diceRollId: 18,
             diceNumber: 8,
             diceRolls: 7
         },{
-            diceRollId: 8,
+            diceRollId: 19,
             diceNumber: 9,
             diceRolls: 7
         },{
-            diceRollId: 9,
+            diceRollId: 20,
             diceNumber: 10,
             diceRolls: 4
         },{
-            diceRollId: 10,
+            diceRollId: 21,
             diceNumber: 11,
             diceRolls: 0
         },{
-            diceRollId: 11,
+            diceRollId: 22,
             diceNumber: 12,
             diceRolls: 0
         }]

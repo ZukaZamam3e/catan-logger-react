@@ -1,6 +1,8 @@
 import { GameModel } from "../models/GameModel";
 import CSS from 'csstype';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import PlayerRow from "./PlayerRow";
+import DiceRollRow from "./DiceRollRow";
 
 interface GameRowProps {
     game: GameModel;
@@ -60,23 +62,9 @@ export default function GameRow(props:GameRowProps) : JSX.Element {
                 <div>
                     Players:
                 </div>
-                {props.game.players.map((player, index) => {
-                    let color: string = player.color;
-
-                    if(color === "white") {
-                        color = "black";
-                    }
-
-                    const playerStyle: CSS.Properties = {
-                        color: color
-                    };
-
-                    return (
-                        <div style={playerStyle}>
-                            {player.turnOrder} - {player.name} - {player.color}{player.winner && " - WINNER!!!"}
-                        </div>
-                    )
-                })}
+                {props.game.players.map((player, index) => (
+                    <PlayerRow key={player.playerId} player={player} />
+                ))}
             </div>
             <div style={columnStyle}>
                 <div>
@@ -86,10 +74,8 @@ export default function GameRow(props:GameRowProps) : JSX.Element {
                     <label>Rolls: {props.game.totalDiceRolls}</label>
                 </div>
                 <div style={diceRollsStyle}>
-                    {props.game.diceRolls.map((dice, index) => (
-                        <div>
-                            {dice.diceNumber}: {dice.diceRolls}
-                        </div>
+                    {props.game.diceRolls.map((diceRoll, index) => (
+                        <DiceRollRow key={diceRoll.diceRollId} diceRoll={diceRoll}/>
                     ))}
                 </div>
                 
