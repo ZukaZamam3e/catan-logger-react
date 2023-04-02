@@ -7,7 +7,7 @@ interface GameRowProps {
 export default function GameRow(props:GameRowProps) : JSX.Element {
     return (
         <div>
-            <label>{props.game.gamePlayedDate.toLocaleDateString()}</label>
+            <label>{props.game.date.toLocaleDateString()}</label>
         </div>
     );
 }

@@ -1,4 +1,7 @@
+import { PlayerModel } from "./PlayerModel";
+
 export interface GameModel {
   gameId: number;
-  gamePlayedDate: Date;
+  date: Date;
+  players: PlayerModel[];
 }
