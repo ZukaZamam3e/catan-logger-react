@@ -8,8 +8,10 @@ import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import {Routes,Route} from "react-router-dom"
 import Login from './components/Login';
 import HomePage from './components/HomePage';
+import axios from 'axios'
 
 library.add(faS, faPlus, faBars, faPencil, faTrash);
+
 
 function App() {
   return (
