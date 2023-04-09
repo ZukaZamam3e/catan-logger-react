@@ -4,4 +4,5 @@ export interface PlayerModel {
     name: string;
     turnOrder: number;
     winner: boolean;
+    deletedRecord: boolean;
 }

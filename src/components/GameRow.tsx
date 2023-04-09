@@ -6,6 +6,7 @@ import DiceRollRow from "./DiceRollRow";
 
 interface GameRowProps {
     game: GameModel;
+    onSelectGame: (game: GameModel) => void;
 }
 
 export default function GameRow(props:GameRowProps) : JSX.Element {
@@ -83,7 +84,7 @@ export default function GameRow(props:GameRowProps) : JSX.Element {
             <div style={commandColumnStyle}>
                 <button
                     style={commandButtonStyle}
-                // onClick={onClick}
+                    onClick={() => { props.onSelectGame(props.game)}}
                 >
                     <FontAwesomeIcon
                         icon={["fas", "pencil"]}
