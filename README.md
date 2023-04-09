@@ -8,7 +8,7 @@ It is hosted at https://catan-logger.azurewebsites.net.
 
 The API is hosted at https://catan-logger-api.azurewebsites.net using .NET Core 6.0. 
 
-This will also be using a SQL Server database that is host by Azure.
+This is also using a SQL Server database that is hosted by Azure.
 
 Source code is hosted in Azure DevOps with CI/CD pipelines deploying to an Azure App Service. 
 
